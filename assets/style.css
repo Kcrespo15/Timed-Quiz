@@ -54,6 +54,10 @@
 
 /*General styling */
 
+.hide {
+    display: none;
+}
+
 #questions {
     margin: 20px;
 }
