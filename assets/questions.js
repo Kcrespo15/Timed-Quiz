@@ -45,5 +45,5 @@ var timeLeft = 60;
 var deduction = 10;
 var score = 0;
 var questionOptions = 0;
-var holdInterval = 0;
+var startInterval = 0;
 

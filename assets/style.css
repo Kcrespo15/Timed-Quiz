@@ -19,7 +19,6 @@
 
 #highscoreBtn {
     background-color: purple;
-    margin-left: 33%;
     padding: 15px 38px;
     font-size: 20px;
     color: white;
@@ -98,4 +97,8 @@ li {
     width: 80%;
     font-size: 18px;
     color: white;
+}
+
+p {
+    text-align: center;
 }
