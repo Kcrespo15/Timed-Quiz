@@ -40,3 +40,10 @@ var currentTime = document.querySelector("#timer");
 var questionsSection = document.querySelector("#questionsSection");
 var ulEl = document.createElement("ul");
 
+// delcaring number variables
+var timeLeft = 60;
+var deduction = 10;
+var score = 0;
+var questionOptions = 0;
+var holdInterval = 0;
+
