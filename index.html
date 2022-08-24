@@ -22,7 +22,7 @@
     <div id="container">
 
         <!-- div for the time -->
-        <div id="timer"></div>
+        <div id="timerClock">Time left: <span id="counter"></span></div>
 
         <!-- Where the content of the quiz will go -->
         <div id="questionsSection">
@@ -31,16 +31,18 @@
                 incorrect answers will penalize your score/time by ten seconds!</p>
 
                 <!-- where the options for the quiz will go -->
-                <section id="quizSection" class="hide">
-                    <h1 id="question"> Question </h1>
+                
+                <ul id="choicesUl"></ul>
+
+                <!-- <section id="quizSection" class="hide">
+                    <h1 id="quest"> Question </h1>
                     <div id="answers" class="buttons">
                         <button id="answer-1" class="answer">A1</button>
                         <button id="answer-2" class="answer">A2</button>
                         <button id="answer-3" class="answer">A3</button>
-                        <button id="answer-4" class="answer">A4</button>
-                        <button id="answer-5" class="answer">A4</button>
-                    </div>
-                </se
+                        <button id="answer-4" class="answer">A4</button> -->
+                    <!-- </div> -->
+                <!-- </section> -->
 
                 <!-- where the start button will go -->
                 <button id="startBtn">Initiate Quiz</button>

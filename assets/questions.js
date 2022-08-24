@@ -34,16 +34,42 @@ var questions = [
 ];
 
 // delcaring variables with selector/create
-var container = document.querySelector("#container");
-var startTime = document.querySelector("#startBtn");
-var currentTime = document.querySelector("#timer");
-var questionsSection = document.querySelector("#questionsSection");
+var container = document.getElementById("container");
+var startTime = document.getElementById("startBtn");
+var currentTime = document.getElementById("timerClock");
+var questionsSection = document.getElementById("questionsSection");
 var ulEl = document.createElement("ul");
 
+
 // delcaring number variables
-var timeLeft = 60;
+// var timeLeft = 60;
+var timer, counter = 60;
 var deduction = 10;
 var score = 0;
-var questionOptions = 0;
+var questionIndex = 0;
 var startInterval = 0;
+var endTime = 0;
 
+
+// function to start timer
+function timerCountDown() {
+    document.getElementById("counter").innerHTML = counter;
+    timer = setInterval(function() {
+        counter--;
+        document.getElementById('counter').innerHTML = counter;
+        if (counter === 0 && endTime ===0 ) {
+            clearInterval(timer);
+            endGame();
+        }
+    }, 1000 );
+
+}
+
+startTime.addEventListener('click', startQuiz);
+
+// function to start quiz 
+
+function startQuiz() {
+    timerCountDown()
+    questionsSection.innerHTML = ''
+}
